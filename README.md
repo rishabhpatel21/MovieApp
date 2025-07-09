@@ -66,7 +66,7 @@ npm install
 ```
 
 3. Set up environment variables:
-Create a `.env` file in the root directory with:
+Create a `.env` file in the backend directory with:
 
 ```
 OMDB_API_KEY=your_api_key
