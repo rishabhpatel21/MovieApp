@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-gray-900 via-gray-950 to-gray-800 min-h-screen text-gray-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-glass-dark backdrop-blur-md rounded-xl shadow-glass border border-glass-light;
+  }
+  
+  .movie-card {
+    @apply glass-card p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-gray-900 font-bold px-5 py-2 rounded-lg shadow-glass transition hover:bg-accent/80 hover:text-gray-900 hover:shadow-lg focus:outline-none;
+  }
+  
+  .btn-secondary {
+    @apply bg-glass-light text-accent font-semibold px-4 py-2 rounded-lg border border-accent shadow-glass transition hover:bg-accent hover:text-gray-900 hover:shadow-glass focus:outline-none;
+  }
+
+  .input {
+    @apply bg-glass-dark border border-glass-light text-accent px-4 py-2 rounded-lg focus:outline-none focus:border-accent placeholder-gray-400 transition;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222831;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Neon focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+}
