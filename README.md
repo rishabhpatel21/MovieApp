@@ -4,14 +4,13 @@ A full-stack movie search application built with React, Express, and MongoDB. Th
 
 ## Features
 
-- **Movie Search**: Search for movies by title with Enter key trigger
-- **Popular Movies**: Display trending movies on the landing page
-- **Movie Details**: Detailed modal view with plot, cast, ratings, and awards
-- **Pagination**: Navigate through search results with pagination
-- **Search History**: Track search queries in MongoDB
-- **Caching**: In-memory caching for improved performance
-- **Responsive Design**: Works on all devices with beautiful UI
-- **Error Handling**: User-friendly error messages and loading states
+- **Movie Search**: Search for movies by title with Enter key trigger.
+- **Popular Movies**: Display trending movies on the landing page.
+- **Movie Details**: Detailed modal view with plot, cast, ratings, and awards.
+- **Pagination**: Navigate through search results with pagination.
+- **Responsive Design**: Works on all devices with beautiful UI.
+- **Error Handling**: User-friendly error messages and loading states.
+- **Favorite Movies Selection**: User can mark their favorite movies.
 
 ## Tech Stack
 
@@ -66,7 +65,7 @@ npm install
 ```
 
 3. Set up environment variables:
-Create a `.env` file in the root directory with:
+Create a `.env` file in the backend directory with:
 
 ```
 OMDB_API_KEY=your_api_key
